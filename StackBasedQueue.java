@@ -5,12 +5,12 @@ public class StackQ {
 	Stack<String> stack1; 
 	Stack<String> stack2;
 
-  public StackQ() {
-    stack1 = new Stack<>();
-    stack2 = new Stack<>();
-  }
+  	public StackQ() {
+   		stack1 = new Stack<>();
+        	stack2 = new Stack<>();
+	}
 	
-  private void push(Stack<String> st, String data) {  
+  	private void push(Stack<String> st, String data) {  
 		st.push(data); 
 	} 
 
@@ -23,10 +23,10 @@ public class StackQ {
 	} 
 
 	public String deQueue() { 
-    if (stack1.isEmpty() && stack2.isEmpty()) { 
+    		if (stack1.isEmpty() && stack2.isEmpty()) { 
 			return null; 
 		} 
-    String temp; 
+    		String temp; 
 		if (stack2.isEmpty()) { 
 			while (!stack1.isEmpty()) { 
 				temp = pop(stack1); 
@@ -34,7 +34,7 @@ public class StackQ {
 			} 
 		} 
 		temp = pop(stack2); 
-    return temp; 
+    		return temp; 
 	} 
 
 }
